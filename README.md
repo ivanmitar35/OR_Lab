@@ -27,7 +27,7 @@ Upravljanje bazom podataka: PostgreSQL
 
 
 \
-Zadnja izmjena 16. listopada 2025, 11:16 (UTC+02:00)
+Zadnja izmjena 16. listopada 2025, 11:16 (UTC+02:00)  
 Kreirano 30. lipnja 2025, 10:34 (UTC+02:00)
 
 Licenca podataka:
