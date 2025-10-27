@@ -6,6 +6,7 @@ Jezik: hrvatski
 Format: CSV, JSON  
 Upravljanje bazom podataka: PostgreSQL  
 
+---
 ## Atributi
 
 | Naziv       |                             Opis                            | Tip     |
@@ -25,13 +26,11 @@ Upravljanje bazom podataka: PostgreSQL
 | lon               | zemljopisna dužina (longitude)                         | decimal |
 | lat               | zemljopisna širina (latitude)                          | decimal |
 
-
-\
+---
 Zadnja izmjena 16. listopada 2025, 11:16 (UTC+02:00)  
-Kreirano 30. lipnja 2025, 10:34 (UTC+02:00)
+Kreirano 30. lipnja 2025, 10:34 (UTC+02:00)  
 
-Licenca podataka:
-Otvorena dozvola (OD)  
-<http://data.gov.hr/otvorena-dozvola>
+Licenca podataka: Otvorena dozvola (OD)  
+<https://data.gov.hr/otvorena-dozvola>
 
 Ključne riječi: javni zdenci, voda, zdenac, komunalna infrastruktura, Zagreb, gradske četvrti, lokacije, otvoreni podaci
