@@ -7,24 +7,25 @@ Format: CSV, JSON
 Upravljanje bazom podataka: PostgreSQL  
 
 ---
+
 ## Atributi
 
 | Naziv       |                             Opis                            | Tip     |
 | ----------- | :---------------------------------------------------------: | ------- |
 | lokacija          | opis lokacije na kojoj se zdenac nalazi                | text    |
 | naziv_gc          | gradska četvrt u kojoj se zdenac nalazi                | text    |
-| tip_zdenca        | naziv ili tip javnog zdenca                            | text    |
-| status_odrz       | status održavanja ili funkcionalnosti (npr. u funkciji) | text    |
+| tip_zdenca        | tip javnog zdenca                            | text    |
+| status_odrz       | status održavanja ili funkcionalnosti | text    |
 | aktivan_da_ne     | oznaka je li zdenac aktivan ("DA"/"NE")                | text    |
 | teren_dane        | opis stanja terena ili uređenosti lokacije             | text    |
 | vlasnik_ki        | vlasnik komunalne infrastrukture                       | text    |
 | odrzava_ki        | tijelo ili poduzeće zaduženo za održavanje             | text    |
 | zkc_oznaka        | oznaka zemljišnoknjižne čestice na kojoj se nalazi zdenac | text    |
-| broj_vodomjera    | broj pridruženog vodomjera (ako postoji)               | text    |
+| broj_vodomjera    | broj pridruženog vodomjera                | text    |
 | napomena_teren    | napomena ili komentar zabilježen na terenu             | text    |
-| pozicija_tocnost  | način određivanja položaja (npr. GNSS)                 | text    |
-| lon               | zemljopisna dužina (longitude)                         | decimal |
-| lat               | zemljopisna širina (latitude)                          | decimal |
+| pozicija_tocnost  | metoda određivanja položaja (npr. GNSS)                 | text    |
+| lon               | geografska dužina (longitude)                         | decimal |
+| lat               | geografska širina (latitude)                          | decimal |
 
 ---
 Zadnja izmjena 16. listopada 2025, 11:16 (UTC+02:00)  

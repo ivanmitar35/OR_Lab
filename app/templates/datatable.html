@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pregled zdenaca</title>
+  <meta description="Lokacije zdenaca Grada Zagreba"
+    keywords="javni zdenci, voda, zdenac, komunalna infrastruktura, Zagreb, gradske četvrti, lokacije, otvoreni podaci"
+    author="Ivan Mitar" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/datatables.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/datatable.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='pipe_water.ico') }}" />
+</head>
+
+<body>
+
+  <div style="margin-bottom: 10px;">
+    <a href="{{ url_for('main.index') }}">Povratak na početnu stranicu</a>
+    <button id="downloadCsv">Preuzmi filtrirani CSV</button>
+    <button id="downloadJson">Preuzmi filtrirani JSON</button>
+  </div>
+
+  <table id="zdenciTable" class="nowrap stripe cell-border" style="width: 100%"></table>
+
+  <script src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/datatable.js') }}"></script>
+</body>
+
+</html>

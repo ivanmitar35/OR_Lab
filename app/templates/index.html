@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokacije zdenaca Grada Zagreba</title>
+  <meta description="Lokacije zdenaca Grada Zagreba"
+    keywords="javni zdenci, voda, zdenac, komunalna infrastruktura, Zagreb, gradske četvrti, lokacije, otvoreni podaci"
+    author="Ivan Mitar" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='pipe_water.ico') }}" />
+</head>
+
+<body>
+  <h1>Lokacije zdenaca Grada Zagreba</h1>
+
+  <div id="downloadLinks">
+    <p>Preuzimanje podataka u formatu:</p>
+    <a href="{{ url_for('static', filename='data/zdenci.csv') }}" download>CSV</a>
+    <a href="{{ url_for('static', filename='data/zdenci.json') }}" download>JSON</a>
+  </div>
+
+  <a id="datatable" href="{{ url_for('main.datatable') }}">Tablica s podatcima</a>
+
+  <p>
+    Autor: Ivan Mitar<br />
+    Verzija skupa podataka: 1.0<br />
+    Jezik: hrvatski<br />
+    Format: CSV, JSON<br />
+    Upravljanje bazom podataka: PostgreSQL
+  </p>
+  <h2>Atributi</h2>
+  <table>
+    <tr>
+      <th>Naziv</th>
+      <th>Opis</th>
+      <th>Tip</th>
+    </tr>
+    <tr>
+      <td>naziv_gc</td>
+      <td>gradska četvrt u kojoj se zdenac nalazi</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>lokacija</td>
+      <td>opis lokacije na kojoj se zdenac nalazi</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>tip_zdenca</td>
+      <td>naziv ili tip javnog zdenca</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>status_odrz</td>
+      <td>status održavanja ili funkcionalnosti (npr. u funkciji)</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>aktivan_da_ne</td>
+      <td>oznaka je li zdenac aktivan ("DA"/"NE")</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>teren_dane</td>
+      <td>opis stanja terena ili uređenosti lokacije</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>vlasnik_ki</td>
+      <td>vlasnik komunalne infrastrukture</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>odrzava_ki</td>
+      <td>tijelo ili poduzeće zaduženo za održavanje</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>zkc_oznaka</td>
+      <td>oznaka zemljišnoknjižne čestice na kojoj se nalazi zdenac</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>broj_vodomjera</td>
+      <td>broj pridruženog vodomjera (ako postoji)</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>napomena_teren</td>
+      <td>napomena ili komentar zabilježen na terenu</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>pozicija_tocnost</td>
+      <td>način određivanja položaja (npr. GNSS)</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>lon</td>
+      <td>zemljopisna dužina</td>
+      <td>decimal</td>
+    </tr>
+    <tr>
+      <td>lat</td>
+      <td>zemljopisna širina</td>
+      <td>decimal</td>
+    </tr>
+  </table>
+
+  <div>
+    <a id="jsonSchema" href="{{ url_for('static', filename='data/schema.json') }}" download>JSON schema</a>
+  </div>
+</body>
+
+</html>

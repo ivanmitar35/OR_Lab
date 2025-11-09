@@ -1,0 +1,42 @@
+{
+  "$id": "https://github.com/ivanmitar35/OR_Lab/app/data/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Javni zdenci Grada Zagreba",
+  "description": "Skup podataka o javnim zdenacima u Gradu Zagrebu.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "naziv_gc": {
+        "type": "string",
+        "title": "Gradska četvrt",
+        "description": "Naziv gradske četvrti."
+      },
+      "zdenci": {
+        "type": "array",
+        "title": "Zdenci",
+        "description": "Popis zdenaca u gradskoj četvrti.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "lokacija": { "type": "string", "title": "Lokacija", "description": "Opis lokacije zdenca." },
+            "naziv_gc": { "type": "string", "title": "Gradska četvrt", "description": "Naziv gradske četvrti." },
+            "tip_zdenca": { "type": "string", "title": "Tip zdenca", "description": "Vrsta javnog zdenca." },
+            "status_odrz": { "type": "string", "title": "Status održavanja", "description": "Stanje održavanja zdenca." },
+            "aktivan_da_ne": { "type": "string", "title": "Aktivan", "description": "Informacija je li zdenac aktivan." },
+            "teren_dane": { "type": "string", "title": "Stanje terena", "description": "Opis terenskog stanja." },
+            "vlasnik_ki": { "type": "string", "title": "Vlasnik", "description": "Vlasnik komunalne infrastrukture." },
+            "odrzava_ki": { "type": "string", "title": "Održava", "description": "Tijelo ili poduzeće zaduženo za održavanje." },
+            "zkc_oznaka": { "type": "string", "title": "ZK oznaka", "description": "Zemljišnoknjižna oznaka." },
+            "broj_vodomjera": { "type": "string", "title": "Broj vodomjera", "description": "Identifikacijski broj vodomjera." },
+            "napomena_teren": { "type": "string", "title": "Napomena teren", "description": "Napomena s terena." },
+            "pozicija_tocnost": { "type": "string", "title": "Točnost pozicije", "description": "Metoda i točnost određivanja lokacije." },
+            "lon": { "type": "number", "title": "Longitude", "description": "Geografska dužina." },
+            "lat": { "type": "number", "title": "Latitude", "description": "Geografska širina." }          },
+          "required": ["lokacija", "lon", "lat"]
+        }
+      }
+    },
+    "required": ["naziv_gc", "zdenci"]
+  }
+}
