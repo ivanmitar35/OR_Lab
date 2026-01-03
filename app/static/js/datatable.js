@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const table = new DataTable("#zdenciTable", {
     ajax: {
       url: "/api/zdenci",
-      dataSrc: "",
+      dataSrc: "data",
     },
+    serverSide: true,
+    processing: true,
     columns: [
       { data: "lokacija", title: "Lokacija" },
       { data: "naziv_gc", title: "Gradska četvrt" },
@@ -45,8 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
   //////////
-  function downloadBlob(content, filename, mime) {
-    const blob = new Blob([content], { type: mime });
+  function downloadFile(blob, filename) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -58,124 +59,66 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   ///////////
 
-  const exportColumns = [
-    { key: "naziv_gc", title: "naziv_gc" },
-    { key: "lokacija", title: "lokacija" },
-    { key: "tip_zdenca", title: "tip_zdenca" },
-    { key: "status_odrz", title: "status_odrz" },
-    { key: "aktivan_da_ne", title: "aktivan_da_ne" },
-    { key: "teren_dane", title: "teren_dane" },
-    { key: "vlasnik_ki", title: "vlasnik_ki" },
-    { key: "odrzava_ki", title: "odrzava_ki" },
-    { key: "zkc_oznaka", title: "zkc_oznaka" },
-    { key: "broj_vodomjera", title: "broj_vodomjera" },
-    { key: "napomena_teren", title: "napomena_teren" },
-    { key: "pozicija_tocnost", title: "pozicija_tocnost" },
-    { key: "lon", title: "lon" },
-    { key: "lat", title: "lat" },
-  ];
+  async function downloadExport(format, filename) {
+    const params = new URLSearchParams();
+    const dtParams = table.ajax && table.ajax.params ? table.ajax.params() : null;
 
+    if (dtParams && dtParams.search && dtParams.search.value) {
+      params.set("search", dtParams.search.value);
+    } else {
+      const searchValue = table.search();
+      if (searchValue) params.set("search", searchValue);
+    }
 
+    if (dtParams && Array.isArray(dtParams.columns)) {
+      dtParams.columns.forEach((column, index) => {
+        if (column.search && column.search.value) {
+          params.set(`columns[${index}][search][value]`, column.search.value);
+        }
+        if (column.columnControl && column.columnControl.search) {
+          const cc = column.columnControl.search;
+          if (cc.value) {
+            params.set(`columns[${index}][columnControl][search][value]`, cc.value);
+          }
+          if (cc.logic) {
+            params.set(`columns[${index}][columnControl][search][logic]`, cc.logic);
+          }
+          if (cc.type) {
+            params.set(`columns[${index}][columnControl][search][type]`, cc.type);
+          }
+        }
+      });
+    } else {
+      const columnCount = table.columns().count();
+      for (let i = 0; i < columnCount; i += 1) {
+        const columnValue = table.column(i).search();
+        if (columnValue) {
+          params.set(`columns[${i}][search][value]`, columnValue);
+        }
+      }
+    }
+
+    const query = params.toString();
+    const url = query
+      ? `/api/zdenci/export?format=${format}&${query}`
+      : `/api/zdenci/export?format=${format}`;
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      console.error(`Export failed: ${response.status}`);
+      return;
+    }
+
+    const blob = await response.blob();
+    downloadFile(blob, filename);
+  }
 
   document.getElementById("downloadCsv").addEventListener("click", () => {
-    const rows = table.rows({ search: "applied" }).data().toArray();
-
-    rows.sort((a, b) => {
-      const g1 = (a.naziv_gc || "").localeCompare(b.naziv_gc || "");
-      if (g1 !== 0) return g1;
-      return (a.lokacija || "").localeCompare(b.lokacija || "");
-    });
-
-    const exportColumns = [
-      { key: "naziv_gc", title: "naziv_gc" },
-      { key: "lokacija", title: "lokacija" },
-      { key: "tip_zdenca", title: "tip_zdenca" },
-      { key: "status_odrz", title: "status_odrz" },
-      { key: "aktivan_da_ne", title: "aktivan_da_ne" },
-      { key: "teren_dane", title: "teren_dane" },
-      { key: "vlasnik_ki", title: "vlasnik_ki" },
-      { key: "odrzava_ki", title: "odrzava_ki" },
-      { key: "zkc_oznaka", title: "zkc_oznaka" },
-      { key: "broj_vodomjera", title: "broj_vodomjera" },
-      { key: "napomena_teren", title: "napomena_teren" },
-      { key: "pozicija_tocnost", title: "pozicija_tocnost" },
-      { key: "lon", title: "lon" },
-      { key: "lat", title: "lat" }
-    ];
-
-    let csv = exportColumns.map(c => c.title).join(",") + "\n";
-
-    rows.forEach(row => {
-      const line = exportColumns.map(c => {
-        let v = row[c.key];
-        if (v === null || v === undefined) v = "";
-        v = String(v).trim();
-
-        if (/^-?\d+(\.\d+)?$/.test(v)) return v;
-        if (v.includes('"') || v.includes(',') || v.includes(';')) {
-          v = v.replace(/"/g, '""');
-          return `"${v}"`;
-        }
-        if (v.includes(' ')) return `"${v}"`;
-        return v;
-      }).join(",");
-      csv += line + "\n";
-    });
-
-    downloadBlob(csv, "zdenci_filtered.csv", "text/csv;charset=utf-8;");
+    downloadExport("csv", "zdenci_filtered.csv");
   });
 
-
-
   document.getElementById("downloadJson").addEventListener("click", () => {
-    const rows = table.rows({ search: "applied" }).data().toArray();
-
-    rows.sort((a, b) => {
-      const g1 = (a.naziv_gc || "").localeCompare(b.naziv_gc || "");
-      if (g1 !== 0) return g1;
-      return (a.lokacija || "").localeCompare(b.lokacija || "");
-    });
-
-    const exportColumns = [
-      "lokacija",
-      "tip_zdenca",
-      "status_odrz",
-      "aktivan_da_ne",
-      "teren_dane",
-      "vlasnik_ki",
-      "odrzava_ki",
-      "zkc_oznaka",
-      "broj_vodomjera",
-      "napomena_teren",
-      "pozicija_tocnost",
-      "lon",
-      "lat"
-    ];
-
-    const grouped = {};
-    rows.forEach(row => {
-      const gc = row.naziv_gc || "Nepoznato";
-      if (!grouped[gc]) grouped[gc] = [];
-      const z = {};
-      exportColumns.forEach(k => {
-        let v = row[k];
-        if (v === "") v = null;
-        if ((k === "lon" || k === "lat") && v !== null) {
-          const num = Number(v);
-          v = Number.isFinite(num) ? num : null;
-        }
-        z[k] = v;
-      });
-      grouped[gc].push(z);
-    });
-
-    const result = Object.keys(grouped).map(gc => ({
-      naziv_gc: gc,
-      zdenci: grouped[gc]
-    }));
-
-    const json = JSON.stringify(result, null, 2);
-    downloadBlob(json, "zdenci_filtered.json", "application/json;charset=utf-8;");
+    downloadExport("json", "zdenci_filtered.json");
   });
 
 });
