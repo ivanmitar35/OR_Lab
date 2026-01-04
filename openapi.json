@@ -1,0 +1,1282 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Zdenci REST API",
+    "version": "1.0.0",
+    "description": "REST API za upravljanje zdenacima i pratecim pregledima.",
+    "contact": {
+      "name": "Ivan Mitar"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/api/v1/zdenci": {
+      "get": {
+        "summary": "Lista zdenaca",
+        "description": "Vraca paginiranu listu zdenaca uz opcionalne filtere.",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maksimalan broj zapisa (1-200).",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 50
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Pocetni pomak u listi.",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "Globalni tekstualni filter.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "naziv_gc_id",
+            "in": "query",
+            "description": "Filtrira po gradskoj cetvrti (ID).",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "status_odrz",
+            "in": "query",
+            "description": "Filtrira po statusu odrzavanja.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "aktivan_da_ne",
+            "in": "query",
+            "description": "Filtrira po statusu aktivan/da-ne.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacListResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Kreiranje zdenaca",
+        "description": "Dodaje novi zdenac u bazu podataka.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ZdenacCreateInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/zdenci/{zdenac_id}": {
+      "get": {
+        "summary": "Detalj zdenaca",
+        "description": "Vraca jedan zdenac po ID-u.",
+        "parameters": [
+          {
+            "name": "zdenac_id",
+            "in": "path",
+            "required": true,
+            "description": "ID zdenaca.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Azuriranje zdenaca",
+        "description": "Azurira postojece podatke za zdenac.",
+        "parameters": [
+          {
+            "name": "zdenac_id",
+            "in": "path",
+            "required": true,
+            "description": "ID zdenaca.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ZdenacUpdateInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Brisanje zdenaca",
+        "description": "Brise zdenac po ID-u.",
+        "parameters": [
+          {
+            "name": "zdenac_id",
+            "in": "path",
+            "required": true,
+            "description": "ID zdenaca.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/zdenci/statusi": {
+      "get": {
+        "summary": "Statistike po statusu",
+        "description": "Vraca broj zdenaca po statusu odrzavanja.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacStatusResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/zdenci/koordinate": {
+      "get": {
+        "summary": "Koordinate zdenaca",
+        "description": "Vraca listu zdenaca s definiranim koordinatama.",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maksimalan broj zapisa (1-200).",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 50
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Pocetni pomak u listi.",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZdenacKoordinateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/gradske-cetvrti": {
+      "get": {
+        "summary": "Gradske cetvrti",
+        "description": "Vraca popis gradskih cetvrti s brojem zdenaca.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GradskaCetvrtResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/zdenci": {
+      "get": {
+        "summary": "DataTables list endpoint",
+        "description": "Server-side DataTables response used by the UI.",
+        "parameters": [
+          {
+            "name": "draw",
+            "in": "query",
+            "description": "DataTables draw counter.",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "description": "Paging offset.",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "length",
+            "in": "query",
+            "description": "Page size.",
+            "schema": {
+              "type": "integer",
+              "minimum": -1
+            }
+          },
+          {
+            "name": "search[value]",
+            "in": "query",
+            "description": "Global search term.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataTableResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Database Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/zdenci/export": {
+      "get": {
+        "summary": "Export filtered data",
+        "description": "Returns filtered data as CSV or JSON.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Export format (csv or json).",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "csv",
+                "json"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ExportGroup"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "summary": "OpenAPI specification",
+        "description": "Returns the OpenAPI specification document.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/docs": {
+      "get": {
+        "summary": "Swagger UI",
+        "description": "Interactive Swagger UI for the OpenAPI specification.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApiEnvelope": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {}
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ErrorDetail": {
+        "type": "object",
+        "properties": {
+          "detail": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "detail"
+        ]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ValidationErrorData": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "errors"
+        ]
+      },
+      "ValidationErrorResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/ValidationErrorData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "Zdenac": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "lokacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "tip_zdenca": {
+            "type": "string",
+            "nullable": true
+          },
+          "status_odrz": {
+            "type": "string",
+            "nullable": true
+          },
+          "aktivan_da_ne": {
+            "type": "string",
+            "nullable": true
+          },
+          "teren_dane": {
+            "type": "string",
+            "nullable": true
+          },
+          "vlasnik_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "odrzava_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "zkc_oznaka": {
+            "type": "string",
+            "nullable": true
+          },
+          "broj_vodomjera": {
+            "type": "string",
+            "nullable": true
+          },
+          "napomena_teren": {
+            "type": "string",
+            "nullable": true
+          },
+          "pozicija_tocnost": {
+            "type": "string",
+            "nullable": true
+          },
+          "lon": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "naziv_gc_id": {
+            "type": "integer",
+            "nullable": true
+          },
+          "naziv_gc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "ZdenacInput": {
+        "type": "object",
+        "properties": {
+          "lokacija": {
+            "type": "string"
+          },
+          "tip_zdenca": {
+            "type": "string"
+          },
+          "status_odrz": {
+            "type": "string"
+          },
+          "aktivan_da_ne": {
+            "type": "string"
+          },
+          "teren_dane": {
+            "type": "string"
+          },
+          "vlasnik_ki": {
+            "type": "string"
+          },
+          "odrzava_ki": {
+            "type": "string"
+          },
+          "zkc_oznaka": {
+            "type": "string"
+          },
+          "broj_vodomjera": {
+            "type": "string"
+          },
+          "napomena_teren": {
+            "type": "string"
+          },
+          "pozicija_tocnost": {
+            "type": "string"
+          },
+          "lon": {
+            "type": "number",
+            "format": "float"
+          },
+          "lat": {
+            "type": "number",
+            "format": "float"
+          },
+          "naziv_gc_id": {
+            "type": "integer"
+          }
+        }
+      },
+      "ZdenacCreateInput": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ZdenacInput"
+          },
+          {
+            "type": "object",
+            "required": [
+              "lokacija"
+            ]
+          }
+        ]
+      },
+      "ZdenacListData": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Zdenac"
+            }
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "offset": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "items",
+          "limit",
+          "offset",
+          "total"
+        ]
+      },
+      "ZdenacListResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/ZdenacListData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ZdenacResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/Zdenac"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "DeleteData": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "DeleteResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/DeleteData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ZdenacStatusItem": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "total": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "status",
+          "total"
+        ]
+      },
+      "ZdenacStatusData": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ZdenacStatusItem"
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "ZdenacStatusResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/ZdenacStatusData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ZdenacKoordinateItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "lokacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "lon": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "naziv_gc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "ZdenacKoordinateData": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ZdenacKoordinateItem"
+            }
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "offset": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "items",
+          "limit",
+          "offset"
+        ]
+      },
+      "ZdenacKoordinateResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/ZdenacKoordinateData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "GradskaCetvrtItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "naziv_gc": {
+            "type": "string"
+          },
+          "total_zdenci": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "naziv_gc",
+          "total_zdenci"
+        ]
+      },
+      "GradskaCetvrtData": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GradskaCetvrtItem"
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "GradskaCetvrtResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/GradskaCetvrtData"
+          }
+        },
+        "required": [
+          "status",
+          "message",
+          "response"
+        ]
+      },
+      "ZdenacUpdateInput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "lokacija": {
+            "type": "string"
+          },
+          "tip_zdenca": {
+            "type": "string"
+          },
+          "status_odrz": {
+            "type": "string"
+          },
+          "aktivan_da_ne": {
+            "type": "string"
+          },
+          "teren_dane": {
+            "type": "string"
+          },
+          "vlasnik_ki": {
+            "type": "string"
+          },
+          "odrzava_ki": {
+            "type": "string"
+          },
+          "zkc_oznaka": {
+            "type": "string"
+          },
+          "broj_vodomjera": {
+            "type": "string"
+          },
+          "napomena_teren": {
+            "type": "string"
+          },
+          "pozicija_tocnost": {
+            "type": "string"
+          },
+          "lon": {
+            "type": "number",
+            "format": "float"
+          },
+          "lat": {
+            "type": "number",
+            "format": "float"
+          },
+          "naziv_gc_id": {
+            "type": "integer"
+          }
+        }
+      },
+      "DataTableRow": {
+        "type": "object",
+        "properties": {
+          "lokacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "naziv_gc": {
+            "type": "string",
+            "nullable": true
+          },
+          "tip_zdenca": {
+            "type": "string",
+            "nullable": true
+          },
+          "status_odrz": {
+            "type": "string",
+            "nullable": true
+          },
+          "aktivan_da_ne": {
+            "type": "string",
+            "nullable": true
+          },
+          "teren_dane": {
+            "type": "string",
+            "nullable": true
+          },
+          "vlasnik_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "odrzava_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "zkc_oznaka": {
+            "type": "string",
+            "nullable": true
+          },
+          "broj_vodomjera": {
+            "type": "string",
+            "nullable": true
+          },
+          "napomena_teren": {
+            "type": "string",
+            "nullable": true
+          },
+          "pozicija_tocnost": {
+            "type": "string",
+            "nullable": true
+          },
+          "lon": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          }
+        }
+      },
+      "DataTableResponse": {
+        "type": "object",
+        "properties": {
+          "draw": {
+            "type": "integer"
+          },
+          "recordsTotal": {
+            "type": "integer"
+          },
+          "recordsFiltered": {
+            "type": "integer"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataTableRow"
+            }
+          }
+        },
+        "required": [
+          "draw",
+          "recordsTotal",
+          "recordsFiltered",
+          "data"
+        ]
+      },
+      "ExportEntry": {
+        "type": "object",
+        "properties": {
+          "lokacija": {
+            "type": "string",
+            "nullable": true
+          },
+          "tip_zdenca": {
+            "type": "string",
+            "nullable": true
+          },
+          "status_odrz": {
+            "type": "string",
+            "nullable": true
+          },
+          "aktivan_da_ne": {
+            "type": "string",
+            "nullable": true
+          },
+          "teren_dane": {
+            "type": "string",
+            "nullable": true
+          },
+          "vlasnik_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "odrzava_ki": {
+            "type": "string",
+            "nullable": true
+          },
+          "zkc_oznaka": {
+            "type": "string",
+            "nullable": true
+          },
+          "broj_vodomjera": {
+            "type": "string",
+            "nullable": true
+          },
+          "napomena_teren": {
+            "type": "string",
+            "nullable": true
+          },
+          "pozicija_tocnost": {
+            "type": "string",
+            "nullable": true
+          },
+          "lon": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          }
+        }
+      },
+      "ExportGroup": {
+        "type": "object",
+        "properties": {
+          "naziv_gc": {
+            "type": "string"
+          },
+          "zdenci": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExportEntry"
+            }
+          }
+        },
+        "required": [
+          "naziv_gc",
+          "zdenci"
+        ]
+      }
+    }
+  }
+}

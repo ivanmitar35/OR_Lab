@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       emptyTable: "Nema podataka u tablici",
     },
   });
-  //////////
+
   function downloadFile(blob, filename) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     a.remove();
     URL.revokeObjectURL(url);
   }
-  ///////////
 
   async function downloadExport(format, filename) {
     const params = new URLSearchParams();
