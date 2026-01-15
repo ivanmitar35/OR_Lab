@@ -2,9 +2,12 @@ from flask import Flask, request
 from werkzeug.exceptions import HTTPException, InternalServerError, MethodNotAllowed
 
 from .api_response import json_response
+from .auth import _init_auth0
 
 def create_app():
     app = Flask(__name__)
+
+    _init_auth0(app)
 
     from .routes import main
     app.register_blueprint(main)

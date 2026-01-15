@@ -1,7 +1,7 @@
 import psycopg2
 
 conn = psycopg2.connect(
-    dbname="zdenci_test", user="postgres", password="123", host="localhost"
+    dbname="zdenci", user="postgres", password="123", host="localhost"
 )
 
 
