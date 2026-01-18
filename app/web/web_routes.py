@@ -2,9 +2,9 @@ from pathlib import Path
 
 from flask import Response, render_template, send_file
 
-from .blueprint import main
+from ..blueprint import main
 
-OPENAPI_PATH = Path(__file__).resolve().parents[1] / "openapi.json"
+OPENAPI_PATH = Path(__file__).resolve().parents[2] / "openapi.json"
 
 
 @main.route("/")

@@ -663,6 +663,14 @@
       "Zdenac": {
         "type": "object",
         "properties": {
+          "@context": {
+            "type": "object",
+            "description": "JSON-LD context."
+          },
+          "@type": {
+            "type": "string",
+            "description": "Schema.org type."
+          },
           "id": {
             "type": "integer"
           },
@@ -730,6 +738,8 @@
           }
         },
         "required": [
+          "@type",
+          "@context",
           "id"
         ]
       },
@@ -892,6 +902,14 @@
       "ZdenacStatusItem": {
         "type": "object",
         "properties": {
+          "@context": {
+            "type": "object",
+            "description": "JSON-LD context."
+          },
+          "@type": {
+            "type": "string",
+            "description": "Schema.org type."
+          },
           "status": {
             "type": "string"
           },
@@ -900,6 +918,8 @@
           }
         },
         "required": [
+          "@type",
+          "@context",
           "status",
           "total"
         ]
@@ -940,6 +960,14 @@
       "ZdenacKoordinateItem": {
         "type": "object",
         "properties": {
+          "@context": {
+            "type": "object",
+            "description": "JSON-LD context."
+          },
+          "@type": {
+            "type": "string",
+            "description": "Schema.org type."
+          },
           "id": {
             "type": "integer"
           },
@@ -963,6 +991,8 @@
           }
         },
         "required": [
+          "@type",
+          "@context",
           "id"
         ]
       },
@@ -1114,6 +1144,14 @@
       "DataTableRow": {
         "type": "object",
         "properties": {
+          "@context": {
+            "type": "object",
+            "description": "JSON-LD context."
+          },
+          "@type": {
+            "type": "string",
+            "description": "Schema.org type."
+          },
           "lokacija": {
             "type": "string",
             "nullable": true
@@ -1203,6 +1241,14 @@
       "ExportEntry": {
         "type": "object",
         "properties": {
+          "@context": {
+            "type": "object",
+            "description": "JSON-LD context."
+          },
+          "@type": {
+            "type": "string",
+            "description": "Schema.org type."
+          },
           "lokacija": {
             "type": "string",
             "nullable": true

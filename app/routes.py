@@ -1,6 +1,6 @@
 from .blueprint import main
-from .datatable_api import api_zdenci, api_zdenci_export
-from .rest_api import (
+from .api.datatable_api import api_zdenci, api_zdenci_export
+from .api.rest_api import (
     api_v1_gradske_cetvrti,
     api_v1_zdenci_create,
     api_v1_zdenci_delete,
@@ -10,7 +10,7 @@ from .rest_api import (
     api_v1_zdenci_statusi,
     api_v1_zdenci_update,
 )
-from .web_routes import datatable, docs, index, openapi_spec
+from .web.web_routes import datatable, docs, index, openapi_spec
 
 __all__ = [
     "main",

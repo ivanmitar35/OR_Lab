@@ -1,17 +1,17 @@
-import csv
-import io
-import json
-
 from flask import Response, jsonify, request
 
-from .blueprint import main
-from .db import conn, fetch_count, fetch_rows_with_cols
-from .zdenci_constants import (
+from ..blueprint import main
+from ..data.db import conn, fetch_count, fetch_rows_with_cols
+from ..data.jsonld import add_jsonld_list
+from ..data.snapshots import (
+    build_csv_payload,
+    build_grouped_json_payload,
+    fetch_zdenci_data,
+)
+from ..data.zdenci_constants import (
     BASE_FROM,
     COLUMN_SQL,
-    CSV_COLUMNS,
     DATA_KEYS,
-    JSON_COLUMNS,
     NUMERIC_KEYS,
     SEARCH_COLUMNS,
     SELECT_COLUMNS,
@@ -185,7 +185,7 @@ def api_zdenci():
         params + limit_params,
     )
     rows, cols = fetch_rows_with_cols(cur)
-    data = [dict(zip(cols, row)) for row in rows] if cols else []
+    data = add_jsonld_list([dict(zip(cols, row)) for row in rows] if cols else [])
     cur.close()
 
     return jsonify(
@@ -212,39 +212,10 @@ def api_zdenci_export():
     where_clause, params = _build_search_clause(search_value, column_filters)
     order_clause = " ORDER BY g.naziv_gc ASC, z.lokacija ASC"
 
-    cur = conn.cursor()
-    cur.execute(
-        f"SELECT {SELECT_COLUMNS} {BASE_FROM}{where_clause}{order_clause}",
-        params,
-    )
-    rows, cols = fetch_rows_with_cols(cur)
-    data = [dict(zip(cols, row)) for row in rows] if cols else []
-    cur.close()
+    data = fetch_zdenci_data(where_clause=where_clause, params=params, order_clause=order_clause)
 
     if fmt == "json":
-        grouped = {}
-        for row in data:
-            gc = row.get("naziv_gc") or "Nepoznato"
-            items = grouped.setdefault(gc, [])
-            entry = {}
-            for key in JSON_COLUMNS:
-                value = row.get(key)
-                if value == "":
-                    value = None
-                if key in {"lon", "lat"}:
-                    if value is None:
-                        entry[key] = None
-                    else:
-                        try:
-                            entry[key] = float(value)
-                        except (TypeError, ValueError):
-                            entry[key] = None
-                else:
-                    entry[key] = value
-            items.append(entry)
-
-        result = [{"naziv_gc": gc, "zdenci": grouped[gc]} for gc in grouped]
-        payload = json.dumps(result, ensure_ascii=False, indent=2)
+        payload = build_grouped_json_payload(data)
         return Response(
             payload,
             mimetype="application/json",
@@ -253,16 +224,9 @@ def api_zdenci_export():
             },
         )
 
-    output = io.StringIO()
-    writer = csv.writer(output, lineterminator="\n")
-    writer.writerow(CSV_COLUMNS)
-    for row in data:
-        writer.writerow(
-            [row.get(key, "") if row.get(key) is not None else "" for key in CSV_COLUMNS]
-        )
-
+    payload = build_csv_payload(data)
     return Response(
-        output.getvalue(),
+        payload,
         mimetype="text/csv",
         headers={"Content-Disposition": "attachment; filename=zdenci_filtered.csv"},
     )

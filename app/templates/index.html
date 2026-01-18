@@ -13,6 +13,28 @@
 </head>
 
 <body>
+  <nav class="top-nav">
+    <div class="nav-links">
+      {% if session.get("user") %}
+        <a href="{{ url_for('main.profile') }}">Korisnički profil</a>
+        <a href="{{ url_for('main.refresh_snapshots') }}">Osvježi preslike</a>
+        <a href="{{ url_for('main.logout') }}">Odjava</a>
+      {% else %}
+        <a href="{{ url_for('main.login') }}">Prijava</a>
+      {% endif %}
+    </div>
+  </nav>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-list">
+        {% for category, message in messages %}
+          <div class="flash-message flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
   <h1>Lokacije zdenaca Grada Zagreba</h1>
 
   <div id="downloadLinks">
@@ -112,8 +134,6 @@
   <div>
     <a id="jsonSchema" href="{{ url_for('static', filename='data/schema.json') }}" download>JSON schema</a>
   </div>
-
-  <p><a href="/home">Home</a></p>
 
 </body>
 

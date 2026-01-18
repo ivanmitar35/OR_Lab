@@ -15,7 +15,14 @@
         "napomena_teren": "uz poštu, preko puta autobusne stanice",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9075755741544,
-        "lat": 45.7241629467747
+        "lat": 45.7241629467747,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Igralište Milekanska - Amerikanska ulica",
@@ -30,7 +37,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9304047449553,
-        "lat": 45.715445708519
+        "lat": 45.715445708519,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -50,7 +64,14 @@
         "napomena_teren": "ispred kbr 30A Lukšić Gornji",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9391974387911,
-        "lat": 45.8548759532494
+        "lat": 45.8548759532494,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Mali potok kod kbr. 6",
@@ -65,7 +86,14 @@
         "napomena_teren": "ulica Mali potok između kbr 4 i kbr 6",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9344708593094,
-        "lat": 45.8534052037957
+        "lat": 45.8534052037957,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park kod križanja Selske i Prilaza baruna Filipovića",
@@ -80,7 +108,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.942344093779,
-        "lat": 45.812637625197
+        "lat": 45.812637625197,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Talani - sjeverno od kbr 37A",
@@ -95,7 +130,14 @@
         "napomena_teren": "Ulica Talani - zapadno od trafostanice",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9262397118216,
-        "lat": 45.8496357937088
+        "lat": 45.8496357937088,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Terminal Črnomerec-jug",
@@ -110,7 +152,14 @@
         "napomena_teren": "juzni terminali okretista Črnomerec",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9340400932208,
-        "lat": 45.8154603260234
+        "lat": 45.8154603260234,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Terminal Črnomerec-sjever",
@@ -125,7 +174,14 @@
         "napomena_teren": "juzni terminali okretista Črnomerec",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9345326451306,
-        "lat": 45.8159034391736
+        "lat": 45.8159034391736,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg dr. Franje Tuđmana, na sjevernom ulazu u park uz tramvajsku stanicu",
@@ -140,7 +196,14 @@
         "napomena_teren": "sjeveroistocni dio parka, uz tramvajsku stanicu (preko puta Ilice 156)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9568417312098,
-        "lat": 45.8130085392504
+        "lat": 45.8130085392504,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Francuske Republike (zapadni dio parka preko puta k.br.9)",
@@ -155,7 +218,14 @@
         "napomena_teren": "jugozapadno od igralista",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9536286420027,
-        "lat": 45.8103403625423
+        "lat": 45.8103403625423,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Tržnica Kustošija",
@@ -170,7 +240,14 @@
         "napomena_teren": "na južnom dijelu tržnice ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9288244041162,
-        "lat": 45.8139265949721
+        "lat": 45.8139265949721,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -190,7 +267,14 @@
         "napomena_teren": "u sklopu Parka Tomislava Ivčića; izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 16.049730068771,
-        "lat": 45.8168039833485
+        "lat": 45.8168039833485,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Perivoj Ivane Brlić Mažuranić - sjeverozapadni ulaz",
@@ -205,7 +289,14 @@
         "napomena_teren": "sjeverozapadni ulaz u Perivoj Ivane B. M.",
         "pozicija_tocnost": "GNSS",
         "lon": 16.047902898285,
-        "lat": 45.8252084248198
+        "lat": 45.8252084248198,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "ulica Sitnice",
@@ -220,7 +311,14 @@
         "napomena_teren": "sjeverno od dječjeg igrališta u Ulici Sitnice ",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0709719813416,
-        "lat": 45.8274976717355
+        "lat": 45.8274976717355,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -240,7 +338,14 @@
         "napomena_teren": "Adrenalinski park sa spravama za vježbanje",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9747544306177,
-        "lat": 45.8045917550948
+        "lat": 45.8045917550948,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Križanje Šubićeve i Martićeve ulice, južni ulaz na tržnicu Kvaternikov trg",
@@ -255,7 +360,14 @@
         "napomena_teren": "izgrađen zdenac pitke vode",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9956713866441,
-        "lat": 45.8128057412384
+        "lat": 45.8128057412384,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Bartula Kašića - uz ogradu dječjeg parka",
@@ -267,10 +379,17 @@
         "odrzava_ki": "Gradski ured za obnovu, izgradnju, prostorno uređenje, graditeljstvo i komunalne poslove",
         "zkc_oznaka": "CENTAR NOVI 6480/1",
         "broj_vodomjera": "5416860067",
-        "napomena_teren": "",
+        "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9970064797527,
-        "lat": 45.8118112909066
+        "lat": 45.8118112909066,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Josipa Jurja Strossmayera, park",
@@ -285,7 +404,14 @@
         "napomena_teren": "jugoistočno od Strossmayerovog kipa",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9787781177477,
-        "lat": 45.8083910878058
+        "lat": 45.8083910878058,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg kralja Petra Krešimira IV kod kbr. 14",
@@ -300,7 +426,14 @@
         "napomena_teren": "Trg kralja Petra Krešimira IV kod kbr 14, južni dio parka k(Kraljice Jelene)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9898020584852,
-        "lat": 45.8072128568808
+        "lat": 45.8072128568808,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg kralja Tomislava, središnji ulaz u park",
@@ -315,7 +448,14 @@
         "napomena_teren": "istočna strana Tomislavovog trga, uz središnji ulaz u park ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9791262464878,
-        "lat": 45.8062177967157
+        "lat": 45.8062177967157,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Nikole Šubića Zrinskog (Zrinjevac), jugoistocno od paviljona ",
@@ -330,7 +470,14 @@
         "napomena_teren": "na Trgu Nikole Šubića Zrinskog (Zrinjevac) , jugoistocno od paviljona -14,8 metara",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9785051708148,
-        "lat": 45.8103558596749
+        "lat": 45.8103558596749,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -350,7 +497,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.0787239653306,
-        "lat": 45.8304110276021
+        "lat": 45.8304110276021,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Čučerje",
@@ -365,7 +519,14 @@
         "napomena_teren": "groblje Čučerje",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0585882691138,
-        "lat": 45.8932589062172
+        "lat": 45.8932589062172,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Čučerje",
@@ -380,7 +541,14 @@
         "napomena_teren": "groblje Čučerje",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0571308196898,
-        "lat": 45.8926839245144
+        "lat": 45.8926839245144,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Miroševac",
@@ -395,7 +563,14 @@
         "napomena_teren": "kod zapadnog ulaza, preko puta crkve",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0387660522448,
-        "lat": 45.8449813266555
+        "lat": 45.8449813266555,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Miroševac",
@@ -410,7 +585,14 @@
         "napomena_teren": "drinking_water; dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0399609387272,
-        "lat": 45.8435542810034
+        "lat": 45.8435542810034,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Okretište Dubec",
@@ -425,7 +607,14 @@
         "napomena_teren": "okretiste Dubec; približna po Google Street View",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0771665399846,
-        "lat": 45.8278885699315
+        "lat": 45.8278885699315,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Okretište Dubrava",
@@ -440,7 +629,14 @@
         "napomena_teren": "okretiste Dubrava; dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0367792660649,
-        "lat": 45.8243492075742
+        "lat": 45.8243492075742,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park poginulih dragovoljaca Trnovčice - Trutina ulica",
@@ -455,7 +651,14 @@
         "napomena_teren": "istočni dio Trutinine ulice ",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0723426156874,
-        "lat": 45.8364061306854
+        "lat": 45.8364061306854,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park poginulih dragovoljaca Trnovčice - Ulica Izidora Poljaka",
@@ -470,7 +673,14 @@
         "napomena_teren": "jugoistocni dio parka",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0723713691762,
-        "lat": 45.8357042033357
+        "lat": 45.8357042033357,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Zlate Bartl nasuprot kbr. 11",
@@ -485,7 +695,14 @@
         "napomena_teren": "sjeverno od parka i igrališta , nasuprot kbr 11",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0708179689071,
-        "lat": 45.8305548741028
+        "lat": 45.8305548741028,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Klin, zapadno od nogometnog igrališta",
@@ -500,7 +717,14 @@
         "napomena_teren": "sa zapadne strane nogometnog igrališta",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0681183281731,
-        "lat": 45.8358889597824
+        "lat": 45.8358889597824,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -520,7 +744,14 @@
         "napomena_teren": "sjeverno od javnog WC-a",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9648762099405,
-        "lat": 45.8127489060025
+        "lat": 45.8127489060025,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Britanski trg kod kbr.3",
@@ -535,7 +766,14 @@
         "napomena_teren": "preko puta kbr 3 Britanski trg",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9646075599351,
-        "lat": 45.8130087320327
+        "lat": 45.8130087320327,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -550,7 +788,14 @@
         "napomena_teren": "na polju 120, križ na polju 121 i pano na polju 132",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9837468444096,
-        "lat": 45.8416296783549
+        "lat": 45.8416296783549,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -565,7 +810,14 @@
         "napomena_teren": "drinking_water; dodano s Open Street Map, na kraju arkada",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9841513489422,
-        "lat": 45.8326560342106
+        "lat": 45.8326560342106,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -580,7 +832,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9835954495994,
-        "lat": 45.8390452363043
+        "lat": 45.8390452363043,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -595,7 +854,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9859043483767,
-        "lat": 45.8388220441123
+        "lat": 45.8388220441123,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -610,7 +876,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9885490892158,
-        "lat": 45.8360137783937
+        "lat": 45.8360137783937,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -625,7 +898,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.990211813809,
-        "lat": 45.8341387640014
+        "lat": 45.8341387640014,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -640,7 +920,14 @@
         "napomena_teren": "srednji ulaz u nove arkade uz Rrmetsku cestu",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9823720541191,
-        "lat": 45.8402072962682
+        "lat": 45.8402072962682,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -655,7 +942,14 @@
         "napomena_teren": "drinking_water; dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9915837876628,
-        "lat": 45.8328496446664
+        "lat": 45.8328496446664,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -670,7 +964,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9840707287853,
-        "lat": 45.8371556896273
+        "lat": 45.8371556896273,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -685,7 +986,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9856250804194,
-        "lat": 45.8383422154774
+        "lat": 45.8383422154774,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -700,7 +1008,14 @@
         "napomena_teren": "drinking_water; dodano s Open Street Map, kod glavnog ulaza",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9839918449366,
-        "lat": 45.835921584612
+        "lat": 45.835921584612,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -715,7 +1030,14 @@
         "napomena_teren": "pokraj polja 153, iznad krematorija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9844145885073,
-        "lat": 45.8435365686628
+        "lat": 45.8435365686628,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj",
@@ -730,7 +1052,14 @@
         "napomena_teren": "uz stepenice i pokraj polja 156",
         "pozicija_tocnost": "GNSS",
         "lon": 15.986386666699,
-        "lat": 45.8410699999264
+        "lat": 45.8410699999264,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Groblje Mirogoj - jug",
@@ -745,7 +1074,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9894089129953,
-        "lat": 45.8331599667715
+        "lat": 45.8331599667715,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -760,7 +1096,14 @@
         "napomena_teren": "pokraj krematorija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9845140174333,
-        "lat": 45.843734521204
+        "lat": 45.843734521204,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -775,7 +1118,14 @@
         "napomena_teren": "kraj kružnog trga, drinking_water; dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9877316255707,
-        "lat": 45.8428494263743
+        "lat": 45.8428494263743,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -790,7 +1140,14 @@
         "napomena_teren": "ispod uzidanih kazeta, ispod krematorija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9848379328579,
-        "lat": 45.8440852445691
+        "lat": 45.8440852445691,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -805,7 +1162,14 @@
         "napomena_teren": "polje 34",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9851245695479,
-        "lat": 45.8445376192609
+        "lat": 45.8445376192609,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -820,7 +1184,14 @@
         "napomena_teren": "u šumi ispod krematorija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9858168349291,
-        "lat": 45.8441467364427
+        "lat": 45.8441467364427,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -835,7 +1206,14 @@
         "napomena_teren": "polje 44",
         "pozicija_tocnost": "GNSS",
         "lon": 15.986629156572,
-        "lat": 45.8440275226155
+        "lat": 45.8440275226155,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -850,7 +1228,14 @@
         "napomena_teren": "polje 42",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9867939082295,
-        "lat": 45.8435980640419
+        "lat": 45.8435980640419,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -865,7 +1250,14 @@
         "napomena_teren": "polje 4",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9853698244986,
-        "lat": 45.8453007112383
+        "lat": 45.8453007112383,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -880,7 +1272,14 @@
         "napomena_teren": "polje 3",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9847784032731,
-        "lat": 45.8455577433938
+        "lat": 45.8455577433938,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -895,7 +1294,14 @@
         "napomena_teren": "polje 2",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9842121751172,
-        "lat": 45.8456654671021
+        "lat": 45.8456654671021,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -910,7 +1316,14 @@
         "napomena_teren": "na dnu stepenica ispod krematorija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9837934873299,
-        "lat": 45.8452544239369
+        "lat": 45.8452544239369,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -925,7 +1338,14 @@
         "napomena_teren": "ispod krematorija, preko puta polja 5 i 5a",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9832697790414,
-        "lat": 45.8454769143059
+        "lat": 45.8454769143059,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Ribnjak-sjever, kod kbr. 44",
@@ -940,7 +1360,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9799902557234,
-        "lat": 45.817800368029
+        "lat": 45.817800368029,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Tuškanac",
@@ -955,7 +1382,14 @@
         "napomena_teren": "točnije prema zapisniku s označenom pozicijom zdenca pored javnog toaleta",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9690820540848,
-        "lat": 45.8221706660049
+        "lat": 45.8221706660049,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Rokov perivoj 4",
@@ -970,7 +1404,14 @@
         "napomena_teren": "Rokov perivoj, nasuprot kućnog broja 4",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9676254069118,
-        "lat": 45.8151128315054
+        "lat": 45.8151128315054,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -990,7 +1431,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.0207448524108,
-        "lat": 45.8408410019109
+        "lat": 45.8408410019109,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1005,7 +1453,14 @@
         "napomena_teren": "polje 41",
         "pozicija_tocnost": "GNSS",
         "lon": 15.987490052012,
-        "lat": 45.8440889737924
+        "lat": 45.8440889737924,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1020,7 +1475,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9877945126693,
-        "lat": 45.8435175955765
+        "lat": 45.8435175955765,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1035,7 +1497,14 @@
         "napomena_teren": "polje 16a",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9841760513818,
-        "lat": 45.8465204102503
+        "lat": 45.8465204102503,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1050,7 +1519,14 @@
         "napomena_teren": "polje 11",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9853944717209,
-        "lat": 45.8460192774354
+        "lat": 45.8460192774354,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1065,7 +1541,14 @@
         "napomena_teren": "polje 43 (ima 2 zdenca na polju 43)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9870608901666,
-        "lat": 45.843750202646
+        "lat": 45.843750202646,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1080,7 +1563,14 @@
         "napomena_teren": "polje 43",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9873451393189,
-        "lat": 45.8434242606131
+        "lat": 45.8434242606131,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1095,7 +1585,14 @@
         "napomena_teren": "polje 47",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9874871595381,
-        "lat": 45.8430776326746
+        "lat": 45.8430776326746,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Krematorij",
@@ -1110,7 +1607,14 @@
         "napomena_teren": "polje 22a",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9862520531425,
-        "lat": 45.8446271034319
+        "lat": 45.8446271034319,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Križanje ulica Vinec i Črešnjevec, dječje igralište",
@@ -1125,7 +1629,14 @@
         "napomena_teren": "u djecjem parku na krizanju ulice Vinec i ulice Črešnjevec",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9916525248824,
-        "lat": 45.852954431874
+        "lat": 45.852954431874,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Maksimirski perivoj, kod IV jezera",
@@ -1140,7 +1651,14 @@
         "napomena_teren": "juzno od IV. jezera, sjeverno od kbr 29",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0276351132429,
-        "lat": 45.8297397701395
+        "lat": 45.8297397701395,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Maksimirski perivoj, kod zapadnog ulaza Prilesje",
@@ -1155,7 +1673,14 @@
         "napomena_teren": "unutar parka, zapadni ulaz Prilesje, pored Sokolske mogile",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0150497931735,
-        "lat": 45.8234028787798
+        "lat": 45.8234028787798,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Maksimirski perivoj, sjeverno od Vidikovca",
@@ -1170,7 +1695,14 @@
         "napomena_teren": "sjeverno od Vidikovca",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0214887598717,
-        "lat": 45.8250184482294
+        "lat": 45.8250184482294,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Maksimir - uz glavni ulaz",
@@ -1185,7 +1717,14 @@
         "napomena_teren": "glavni ulaz u park na lijevu stranu , uz javnu ustanovu kbr 1",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0154196515544,
-        "lat": 45.8201355612181
+        "lat": 45.8201355612181,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Otti Berger - uz neboder u Ulici Ivana Rendića kbr. 23",
@@ -1200,7 +1739,14 @@
         "napomena_teren": "08/08/2024 mailom poslana obavijest da je u funkciji",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0054867563913,
-        "lat": 45.8186298315423
+        "lat": 45.8186298315423,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ravnice školsko igralište - Aleja Antuna Augustinčića kod kbr. 8",
@@ -1215,7 +1761,14 @@
         "napomena_teren": "na sportskim terenima uz školsko igralište",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0248136483395,
-        "lat": 45.8182028645024
+        "lat": 45.8182028645024,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "SRC Svetice",
@@ -1230,7 +1783,14 @@
         "napomena_teren": "SRC Svetice, sjeverno od staze za trčanje",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0140936250674,
-        "lat": 45.8181491236122
+        "lat": 45.8181491236122,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Eugena Kvaternika",
@@ -1245,7 +1805,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9980159547913,
-        "lat": 45.8144068399985
+        "lat": 45.8144068399985,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Otokara Keršovanija kod kbr. 17",
@@ -1260,7 +1827,14 @@
         "napomena_teren": "Trg Otokara Keršovanija 17",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9985337976992,
-        "lat": 45.8173118238236
+        "lat": 45.8173118238236,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1280,7 +1854,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.014308187305,
-        "lat": 45.7643911383419
+        "lat": 45.7643911383419,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jakuševečka ulica uz crkvu i groblje Jakuševec",
@@ -1295,7 +1876,14 @@
         "napomena_teren": "unutar groblja Jakuševec, sjeverno od mrtvačnice; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0201882534129,
-        "lat": 45.7579909487743
+        "lat": 45.7579909487743,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Meštrovićev trg, uz košarkaško igralište",
@@ -1310,7 +1898,14 @@
         "napomena_teren": "juzno od kosarkaskog igralista, uz pješačku stazu",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9956385351386,
-        "lat": 45.7804561756988
+        "lat": 45.7804561756988,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Obala 8. svibnja 1945.-park Bundek",
@@ -1325,7 +1920,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9839066195966,
-        "lat": 45.7874002125688
+        "lat": 45.7874002125688,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Obala 8. svibnja 1945.-park Bundek",
@@ -1340,7 +1942,14 @@
         "napomena_teren": "juzno od nasipa",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0003289528959,
-        "lat": 45.7837230278524
+        "lat": 45.7837230278524,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Travno, istočno od crkve",
@@ -1355,7 +1964,14 @@
         "napomena_teren": "juzna strana parka, istocno od crkve",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9968818780677,
-        "lat": 45.7708703569593
+        "lat": 45.7708703569593,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Stonska ulica, dječje igralište",
@@ -1370,7 +1986,14 @@
         "napomena_teren": "jugoistocni ulaz djecjeg igralista ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9856573996059,
-        "lat": 45.7804246822206
+        "lat": 45.7804246822206,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Damira Tomljanovića Gavrana-park Bundek",
@@ -1385,7 +2008,14 @@
         "napomena_teren": "Bundek park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9890741336705,
-        "lat": 45.7838885937373
+        "lat": 45.7838885937373,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Damira Tomljanovića Gavrana-park Bundek",
@@ -1400,7 +2030,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9867354480099,
-        "lat": 45.7842108306981
+        "lat": 45.7842108306981,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Damira Tomljanovića Gavrana-park Bundek",
@@ -1415,7 +2052,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9833563641285,
-        "lat": 45.783931141148
+        "lat": 45.783931141148,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Savezne Republike Njemačke - Ulica Zulejke Stefanini Tućan",
@@ -1430,7 +2074,14 @@
         "napomena_teren": "jugoistocni ulaz u park za pse ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9918730072515,
-        "lat": 45.7752464281576
+        "lat": 45.7752464281576,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Savezne Republike Njemačke kod kbr. 6, dječje igralište",
@@ -1445,7 +2096,14 @@
         "napomena_teren": "zapadni dio zgrade Ulica Savezne Republike Njemacke , br.6. ulaz u park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.989064084306,
-        "lat": 45.7791967402493
+        "lat": 45.7791967402493,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica sv. Mateja 107 - zelena površina uz stazu",
@@ -1460,7 +2118,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0000526390757,
-        "lat": 45.7647301154394
+        "lat": 45.7647301154394,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Vladimira Varićaka kod kbr. 5",
@@ -1475,7 +2140,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.988587435773,
-        "lat": 45.7656011202186
+        "lat": 45.7656011202186,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1495,7 +2167,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9701989208448,
-        "lat": 45.771249990482
+        "lat": 45.771249990482,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Remetinečka cesta, južni ulaz Savskog mosta",
@@ -1510,7 +2189,14 @@
         "napomena_teren": "juzni ulaz Savskog mosta",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9548260231856,
-        "lat": 45.7829741476441
+        "lat": 45.7829741476441,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Remetinečki gaj 20C, uz park",
@@ -1525,7 +2211,14 @@
         "napomena_teren": "jugoistocni ugao zgrade br. 20C (uz park)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9493332418667,
-        "lat": 45.7692898101725
+        "lat": 45.7692898101725,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Školsko igralište OŠ Trnsko",
@@ -1540,7 +2233,14 @@
         "napomena_teren": "(potreban popravak!, curi) sjeveroistocno od igralista ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9628974617954,
-        "lat": 45.7749505418414
+        "lat": 45.7749505418414,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trnsko - tržnica",
@@ -1555,7 +2255,14 @@
         "napomena_teren": "tržnica Trnsko, jedna slavina radi druga ne ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9641471636618,
-        "lat": 45.7721057134341
+        "lat": 45.7721057134341,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1575,7 +2282,14 @@
         "napomena_teren": "zapadno od parka , nasuprot kbr Čerinina 13",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0072397857233,
-        "lat": 45.8108525350585
+        "lat": 45.8108525350585,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Donje Svetice kod kbr. 103",
@@ -1590,7 +2304,14 @@
         "napomena_teren": "peko puta LIDL trgovine",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0151600068769,
-        "lat": 45.8020471465137
+        "lat": 45.8020471465137,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Granešinska - Tenjska južno od kbr. 1",
@@ -1605,7 +2326,14 @@
         "napomena_teren": "južno od kbr 1 Tenjska ulica; izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0144980688456,
-        "lat": 45.8135293907602
+        "lat": 45.8135293907602,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "I. Kozari put na križanju s Kozari",
@@ -1620,7 +2348,14 @@
         "napomena_teren": "raskrizje I. Kozari put i Kozari; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0523571390343,
-        "lat": 45.7919150314022
+        "lat": 45.7919150314022,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ivekovićeva ulica - s južne strane vježbališta kod kbr. 4",
@@ -1635,7 +2370,14 @@
         "napomena_teren": "Ivekovićeva ulica, s južne strane vježbališta i dječjeg igrališta",
         "pozicija_tocnost": "Mobitel",
         "lon": 16.0198008315693,
-        "lat": 45.8012022768757
+        "lat": 45.8012022768757,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Kozari I. odvojak južno od igrališta",
@@ -1650,7 +2392,14 @@
         "napomena_teren": "sjeverna strana Kozari I. odvojak (juzno od igralista)",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0558930681627,
-        "lat": 45.7933790430586
+        "lat": 45.7933790430586,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savudrijska ulica, kod križanja sa Sovinjačkom ",
@@ -1665,7 +2414,14 @@
         "napomena_teren": "krizanje Savudrijske i Sovinjačke; izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 16.0413706492616,
-        "lat": 45.8090544465872
+        "lat": 45.8090544465872,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1685,7 +2441,14 @@
         "napomena_teren": "zapadno od kbr 43 Gračansko dolje ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9764550378225,
-        "lat": 45.8604832525182
+        "lat": 45.8604832525182,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Isce kod kbr. 15",
@@ -1700,7 +2463,14 @@
         "napomena_teren": "unutar igralista (zapadno), sjeverno od kbr 15 (Pučka škola); izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9700811654,
-        "lat": 45.8558965081034
+        "lat": 45.8558965081034,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Lonjšćina kod kbr. 22",
@@ -1715,7 +2485,14 @@
         "napomena_teren": "ispred kbr 22 Lonscinjska",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9730801909793,
-        "lat": 45.8616754975813
+        "lat": 45.8616754975813,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Spomen-park Dotrščina, ulaz Štefanovec",
@@ -1730,7 +2507,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.0283284039186,
-        "lat": 45.8423683150638
+        "lat": 45.8423683150638,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1750,7 +2534,14 @@
         "napomena_teren": "zapadni dio ulaska u park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8819953201191,
-        "lat": 45.8195492416244
+        "lat": 45.8195492416244,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Dubravica 109a",
@@ -1765,7 +2556,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.8700047274854,
-        "lat": 45.8326478275227
+        "lat": 45.8326478275227,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Male Putine kod kbr. 11, dječji park",
@@ -1780,7 +2578,14 @@
         "napomena_teren": "ispred kbr 11 Male Putine , ulaz u dječji park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8869700898375,
-        "lat": 45.8203587986857
+        "lat": 45.8203587986857,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park 101. brigade Hrvatske vojske, dječji park",
@@ -1795,7 +2600,14 @@
         "napomena_teren": "ulaz u djecji park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8745822480561,
-        "lat": 45.8162324023095
+        "lat": 45.8162324023095,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Lujze Janović Wagner",
@@ -1810,7 +2622,14 @@
         "napomena_teren": "sjeveroistočni ulaz u park",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8883130162897,
-        "lat": 45.8163535781341
+        "lat": 45.8163535781341,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Podsusedski trg 1",
@@ -1825,7 +2644,14 @@
         "napomena_teren": "ulaz u park, nasuprot kbr Podsusedski trg 1",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8355995328427,
-        "lat": 45.8169182511529
+        "lat": 45.8169182511529,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Majke Terezije - Vrapče, dječji park južno od bolnice",
@@ -1840,7 +2666,14 @@
         "napomena_teren": "ispod bolnice, sjeveroistocno od kosarkaskog igralista. nasuprot ulice Majke Terezije 12",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8982395031405,
-        "lat": 45.8146439498289
+        "lat": 45.8146439498289,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Sigetje - Gajnice, park za pse",
@@ -1855,7 +2688,14 @@
         "napomena_teren": "unutar parka za pse",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8761625709167,
-        "lat": 45.8140000118856
+        "lat": 45.8140000118856,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1875,7 +2715,14 @@
         "napomena_teren": "uz istočnu stranu potoka",
         "pozicija_tocnost": "GNSS",
         "lon": 16.1068113383191,
-        "lat": 45.8318122242657
+        "lat": 45.8318122242657,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jelkovečka cesta 4, sajmište",
@@ -1890,7 +2737,14 @@
         "napomena_teren": "sredina prostora za sajam (Sesvete)",
         "pozicija_tocnost": "GNSS",
         "lon": 16.1139675432054,
-        "lat": 45.8209038680242
+        "lat": 45.8209038680242,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Dragutina Domjanića kod kbr. 5",
@@ -1905,7 +2759,14 @@
         "napomena_teren": "nasuprot Muzeja (kbr 5)",
         "pozicija_tocnost": "GNSS",
         "lon": 16.1101792866753,
-        "lat": 45.8270065836559
+        "lat": 45.8270065836559,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica potočnica",
@@ -1920,7 +2781,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.0912455402786,
-        "lat": 45.831609018733
+        "lat": 45.831609018733,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Vladimira Stahuljaka kod kbr. 1 - uz igralište",
@@ -1935,7 +2803,14 @@
         "napomena_teren": "zapadno od igrališta",
         "pozicija_tocnost": "GNSS",
         "lon": 16.1066023099025,
-        "lat": 45.8116764728423
+        "lat": 45.8116764728423,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -1955,7 +2830,14 @@
         "napomena_teren": "sredina Djecjeg trga, voda malo curi (treba popravak)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9043738873101,
-        "lat": 45.7991678145227
+        "lat": 45.7991678145227,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Šetalište 150. brigade Hrvatske vojske",
@@ -1970,7 +2852,14 @@
         "napomena_teren": "unutar parka, sjeverno od dječjeg igrališta",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9073175982003,
-        "lat": 45.7974982350225
+        "lat": 45.7974982350225,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg hrvatskih pavlina - kod ulaza u gimnaziju",
@@ -1985,7 +2874,14 @@
         "napomena_teren": "jugozapadno od gimnazije Lucijana Vranjanina. pokvareno (curi sa strane), treba popravak!",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8915534398892,
-        "lat": 45.810095338289
+        "lat": 45.810095338289,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Ivana Kukuljevića, sjeverna strana",
@@ -2000,7 +2896,14 @@
         "napomena_teren": "sjeverna strana Trga Ivana Kukuljevića",
         "pozicija_tocnost": "GNSS",
         "lon": 15.8960590865246,
-        "lat": 45.8057204363906
+        "lat": 45.8057204363906,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Tržnica Špansko - Ulica Dobriše Cesarića",
@@ -2015,7 +2918,14 @@
         "napomena_teren": "sredina tržnice Špansko (unutar nadstrešnice)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.898552259174,
-        "lat": 45.8024201580398
+        "lat": 45.8024201580398,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Jankomir kod kbr. 8",
@@ -2030,7 +2940,14 @@
         "napomena_teren": "ulica Jankomir, sjeverno od kucnog broja  8",
         "pozicija_tocnost": "GNSS",
         "lon": 15.878040624451,
-        "lat": 45.8097714842882
+        "lat": 45.8097714842882,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -2050,7 +2967,14 @@
         "napomena_teren": "sa sjeverne strane jezera, nasuprot tribina na veslačkoj stazi; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9167654663907,
-        "lat": 45.7858627163896
+        "lat": 45.7858627163896,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2065,7 +2989,14 @@
         "napomena_teren": "drinking_fountain - dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9105337546608,
-        "lat": 45.7815071886105
+        "lat": 45.7815071886105,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2080,7 +3011,14 @@
         "napomena_teren": "jugozapadna strana jezera; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9132066366875,
-        "lat": 45.7789577848684
+        "lat": 45.7789577848684,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2095,7 +3033,14 @@
         "napomena_teren": "jugozapadna strana jezera; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.914425736865,
-        "lat": 45.7800888800187
+        "lat": 45.7800888800187,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2110,7 +3055,14 @@
         "napomena_teren": "sjeverna strana Malog jezera; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9329054000369,
-        "lat": 45.7805067620623
+        "lat": 45.7805067620623,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2125,7 +3077,14 @@
         "napomena_teren": "sjeverna strana jezera nasuprot tribina na veslačkoj stazi; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9146763091925,
-        "lat": 45.7867864296527
+        "lat": 45.7867864296527,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2140,7 +3099,14 @@
         "napomena_teren": "sjeverna strana Malog jezera; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.934711871944,
-        "lat": 45.7810267915032
+        "lat": 45.7810267915032,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2155,7 +3121,14 @@
         "napomena_teren": "uz Malo jezero za istocne strane; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9367861195675,
-        "lat": 45.7804898756344
+        "lat": 45.7804898756344,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2170,7 +3143,14 @@
         "napomena_teren": "istočna strana u odnosu na jezero; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9371991744557,
-        "lat": 45.7793131635617
+        "lat": 45.7793131635617,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2185,7 +3165,14 @@
         "napomena_teren": "jugozapadni dio jezera; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9128144854405,
-        "lat": 45.7806263037161
+        "lat": 45.7806263037161,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Jarun",
@@ -2200,7 +3187,14 @@
         "napomena_teren": "otok Tresnjevka u Jarunskom kompleksu; približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9192296839878,
-        "lat": 45.7824220802214
+        "lat": 45.7824220802214,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Okretište Savski most",
@@ -2215,7 +3209,14 @@
         "napomena_teren": "okretište Savski most (zapadna strana)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9523697079872,
-        "lat": 45.7850684629692
+        "lat": 45.7850684629692,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park 149 brigade Hrvatske vojske, južni ulaz u park",
@@ -2230,7 +3231,14 @@
         "napomena_teren": "juzni ulaz u park ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9350227619824,
-        "lat": 45.7890016779642
+        "lat": 45.7890016779642,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Emila Cossetta",
@@ -2245,7 +3253,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9017189536899,
-        "lat": 45.7948131892783
+        "lat": 45.7948131892783,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Franje Fuisa kod kbr. 6, park uz potok",
@@ -2260,7 +3275,14 @@
         "napomena_teren": "sjeverozapadni dio igrališta, uz potok",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9383676524859,
-        "lat": 45.7868514436346
+        "lat": 45.7868514436346,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -2280,7 +3302,14 @@
         "napomena_teren": "zapadni ulaz u park za pse",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9442041419982,
-        "lat": 45.8057738559292
+        "lat": 45.8057738559292,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Park Stara Trešnjevka - uz ogradu dječjeg parka",
@@ -2295,7 +3324,14 @@
         "napomena_teren": "uz Park Stara Trešnjevka (juzni ulaz)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9494144196122,
-        "lat": 45.7979884761935
+        "lat": 45.7979884761935,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trg Krešimira Ćosića kod kbr. 1",
@@ -2310,7 +3346,14 @@
         "napomena_teren": "istočni dio Trga Krešimira Ćosića (nasuprot kbr 1 Metalčeva ulica)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9526480632404,
-        "lat": 45.8063316229488
+        "lat": 45.8063316229488,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Zvornička ulica - istočna strana tržnice Trešnjevka",
@@ -2322,10 +3365,17 @@
         "odrzava_ki": "Tržnice Zagreb",
         "zkc_oznaka": "GRAD ZAGREB 4714/1",
         "broj_vodomjera": null,
-        "napomena_teren": "",
+        "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 15.9540358280659,
-        "lat": 45.7991373785357
+        "lat": 45.7991373785357,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   },
@@ -2345,7 +3395,14 @@
         "napomena_teren": "raskrižje ulica Trnjanske Ledine II i III",
         "pozicija_tocnost": "GNSS",
         "lon": 15.978853278151,
-        "lat": 45.793235575586
+        "lat": 45.793235575586,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Bednjanska kod kbr. 13",
@@ -2360,7 +3417,14 @@
         "napomena_teren": "uz istocnu ogradu kbr 13 (Bednjanska ulica)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9729793891764,
-        "lat": 45.8028110274557
+        "lat": 45.8028110274557,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Bosutska - Sprečka na križanju",
@@ -2375,7 +3439,14 @@
         "napomena_teren": "dodano s Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9825917393699,
-        "lat": 45.797046842326
+        "lat": 45.797046842326,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Breznička I. - Kruge",
@@ -2390,7 +3461,14 @@
         "napomena_teren": "nasuprot Breznicka kbr. 1",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9861348992349,
-        "lat": 45.799304470219
+        "lat": 45.799304470219,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Fontane - Hrvatske bratske zajednice",
@@ -2405,7 +3483,14 @@
         "napomena_teren": "dva komada, jedan kraj drugug",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9793381630954,
-        "lat": 45.7973135011529
+        "lat": 45.7973135011529,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Fontane - Hrvatske bratske zajednice",
@@ -2420,7 +3505,14 @@
         "napomena_teren": "dodano s Open Street Map, dva komada jedan kraj drugog",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9791058051867,
-        "lat": 45.7966452872334
+        "lat": 45.7966452872334,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Galovačka ulica",
@@ -2435,7 +3527,14 @@
         "napomena_teren": "nasuprot kbr 13 i 15 ( Galovačka ulica)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9698124058561,
-        "lat": 45.800288471137
+        "lat": 45.800288471137,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Hrvatske bratske zajednice, park za pse",
@@ -2450,7 +3549,14 @@
         "napomena_teren": "u ogradjenom parku, sjeveroistočni ugao NSB-a ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9783496899083,
-        "lat": 45.7975929775927
+        "lat": 45.7975929775927,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Kninski trg, dječje igralište",
@@ -2465,7 +3571,14 @@
         "napomena_teren": "južna strana dječjeg igrališta ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9672607669497,
-        "lat": 45.7958436786777
+        "lat": 45.7958436786777,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Koranska kod kbr. 26",
@@ -2480,7 +3593,14 @@
         "napomena_teren": "kucni broj 28-26 Koranska ulica ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9676265670713,
-        "lat": 45.8006156773045
+        "lat": 45.8006156773045,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Križanje Japranska ulica - Paromliska cesta",
@@ -2495,7 +3615,14 @@
         "napomena_teren": "Paromlinska - Japranska ulica (križanje); približno prema Open Street Map",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9770746019213,
-        "lat": 45.7979368282882
+        "lat": 45.7979368282882,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Križanje ulice Pile II. i ulice Pile I.",
@@ -2510,7 +3637,14 @@
         "napomena_teren": "krizanje ulice Pile II. i ulice Pile I.",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9917574198545,
-        "lat": 45.796068761912
+        "lat": 45.796068761912,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Kruge kod kbr. 29 ",
@@ -2525,7 +3659,14 @@
         "napomena_teren": "Kruge kod kbr. 29 - dodano s Open Street Maps",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9898396738965,
-        "lat": 45.7965363072231
+        "lat": 45.7965363072231,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Novska kod kbr. 30 , dječje igralište uz nasip",
@@ -2540,7 +3681,14 @@
         "napomena_teren": "uz nasip , južno od Novske ulice br.30",
         "pozicija_tocnost": "GNSS",
         "lon": 15.990257333668,
-        "lat": 45.789817120721
+        "lat": 45.789817120721,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Pile I. - Kruge",
@@ -2555,7 +3703,14 @@
         "napomena_teren": "krizanje ulice Kruge i ulica Pile I.",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9907486394494,
-        "lat": 45.7956311526271
+        "lat": 45.7956311526271,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Prisavlje - kod kbr. 12",
@@ -2570,7 +3725,14 @@
         "napomena_teren": "uz nasip, juzno od parkiralista (jugoistocno od nebodera kbr 12 Prisavlje)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9663742455045,
-        "lat": 45.7895942402791
+        "lat": 45.7895942402791,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Prisavlje - uz ogradu gradskih vrtova",
@@ -2585,7 +3747,14 @@
         "napomena_teren": "uz jugostočni rub ograde gradskih vrtova",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9990504686487,
-        "lat": 45.7886087196558
+        "lat": 45.7886087196558,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Prisavlje uz nasip (Boćarski dom -dječje igralište)",
@@ -2600,7 +3769,14 @@
         "napomena_teren": "sjeverozapadni ulaz u dječji park ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9623321836134,
-        "lat": 45.7893084554774
+        "lat": 45.7893084554774,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Radonjska ulica kod kbr. 9",
@@ -2615,7 +3791,14 @@
         "napomena_teren": "nasuprot kucnog broja 9, Radonjska ulica ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9664960725418,
-        "lat": 45.8013879458333
+        "lat": 45.8013879458333,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Rapska 39",
@@ -2630,7 +3813,14 @@
         "napomena_teren": null,
         "pozicija_tocnost": "GNSS",
         "lon": 16.003689610612,
-        "lat": 45.799249279728
+        "lat": 45.799249279728,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savica Prisavlje - park za pse",
@@ -2645,7 +3835,14 @@
         "napomena_teren": "u parku za pse ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9996728302458,
-        "lat": 45.7887588606595
+        "lat": 45.7887588606595,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savica Prisavlje - piknik park",
@@ -2660,7 +3857,14 @@
         "napomena_teren": "uz sjevernu ogradu izvan parka za pse ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9997031341821,
-        "lat": 45.7888708203377
+        "lat": 45.7888708203377,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savica Prisavlje - piknik park",
@@ -2675,7 +3879,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9983826441472,
-        "lat": 45.7883266721267
+        "lat": 45.7883266721267,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savica Prisavlje - piknik park",
@@ -2690,7 +3901,14 @@
         "napomena_teren": "izvorno SKI lokacija",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9989959088464,
-        "lat": 45.7880043555248
+        "lat": 45.7880043555248,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savica Prisavlje - piknik park",
@@ -2705,7 +3923,14 @@
         "napomena_teren": "sjeverno od nasipa, na juznom dijelu parka ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9971378980165,
-        "lat": 45.7885103023327
+        "lat": 45.7885103023327,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Savska cesta - Koturaška cesta 75, park pored OŠ",
@@ -2720,7 +3945,14 @@
         "napomena_teren": "krizanje Savska /Koturaška pored OŠ Tin Ujević",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9643792872577,
-        "lat": 45.8021333408459
+        "lat": 45.8021333408459,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Slavonska avenija kod HRT",
@@ -2735,7 +3967,14 @@
         "napomena_teren": "nasuprot kbr 132 Miramarska cesta ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9723899417477,
-        "lat": 45.7938901100255
+        "lat": 45.7938901100255,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Sprečka ulica 33A - u parku",
@@ -2750,7 +3989,14 @@
         "napomena_teren": "zapadni dio parkića, ispod Slavonske avenije . Sprečka 33A",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9826472117098,
-        "lat": 45.795230986989
+        "lat": 45.795230986989,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Šoltanska ulica kod kbr. 17",
@@ -2765,7 +4011,14 @@
         "napomena_teren": "preko puta kucnog broja 17 (Šoltanska ulica)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9982676169219,
-        "lat": 45.7981647115462
+        "lat": 45.7981647115462,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trnjanska cesta nasuprot kbr 117. - uz nasip",
@@ -2780,7 +4033,14 @@
         "napomena_teren": "uz nasip,  nasuprot kucnog broja 117 (Trnjanska cesta)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9800417382842,
-        "lat": 45.7907029381217
+        "lat": 45.7907029381217,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Trnjanska struga južno od zgrade HRT ",
@@ -2795,7 +4055,14 @@
         "napomena_teren": "nasuprot kbr 24 Trnjanska struga",
         "pozicija_tocnost": "GNSS",
         "lon": 15.975052489948,
-        "lat": 45.7917058765599
+        "lat": 45.7917058765599,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Ulica Prudi kod kbr. 26A ",
@@ -2810,7 +4077,14 @@
         "napomena_teren": "ispred kućnog broja 26 ulica Prudi ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9776003072403,
-        "lat": 45.7921181080949
+        "lat": 45.7921181080949,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Veslačka - uz stepenice prema nasipu",
@@ -2825,7 +4099,14 @@
         "napomena_teren": "Veslačka uz stepenice prema nasipu",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9563789287343,
-        "lat": 45.7867088311897
+        "lat": 45.7867088311897,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Vrbanjska kod kbr. 3",
@@ -2840,7 +4121,14 @@
         "napomena_teren": "uz zapadnu ogradu kbr 3 (Vrbanjska ulica)",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9797463326101,
-        "lat": 45.7966068778458
+        "lat": 45.7966068778458,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Zelinska ulica 5 - uz zapadnu ogradu parka",
@@ -2855,7 +4143,14 @@
         "napomena_teren": "uz zapadnu ogradu parka , Zelinska ulica ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9725620151412,
-        "lat": 45.80172792384
+        "lat": 45.80172792384,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       },
       {
         "lokacija": "Zrmanjska, križanje s Ličkom ulicom",
@@ -2870,7 +4165,14 @@
         "napomena_teren": "križanje Zrmanjske i Ličke ulice, ispred kbr 40 Lička ",
         "pozicija_tocnost": "GNSS",
         "lon": 15.9750239682075,
-        "lat": 45.7950696676288
+        "lat": 45.7950696676288,
+        "@context": {
+          "@vocab": "https://schema.org/",
+          "lokacija": "address",
+          "lat": "latitude",
+          "lon": "longitude"
+        },
+        "@type": "https://schema.org/Place"
       }
     ]
   }

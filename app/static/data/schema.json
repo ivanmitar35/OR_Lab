@@ -19,6 +19,8 @@
         "items": {
           "type": "object",
           "properties": {
+            "@context": { "type": "object", "title": "JSON-LD context", "description": "Semantic mapping for JSON-LD." },
+            "@type": { "type": "string", "title": "JSON-LD type", "description": "Schema.org type for the resource." },
             "lokacija": { "type": "string", "title": "Lokacija", "description": "Opis lokacije zdenca." },
             "naziv_gc": { "type": "string", "title": "Gradska četvrt", "description": "Naziv gradske četvrti." },
             "tip_zdenca": { "type": "string", "title": "Tip zdenca", "description": "Vrsta javnog zdenca." },
@@ -31,9 +33,10 @@
             "broj_vodomjera": { "type": "string", "title": "Broj vodomjera", "description": "Identifikacijski broj vodomjera." },
             "napomena_teren": { "type": "string", "title": "Napomena teren", "description": "Napomena s terena." },
             "pozicija_tocnost": { "type": "string", "title": "Točnost pozicije", "description": "Metoda i točnost određivanja lokacije." },
-            "lon": { "type": "number", "title": "Longitude", "description": "Geografska dužina." },
-            "lat": { "type": "number", "title": "Latitude", "description": "Geografska širina." }          },
-          "required": ["lokacija", "lon", "lat"]
+            "lon": { "type": "number", "title": "Longitude", "description": "Geografska du??ina." },
+            "lat": { "type": "number", "title": "Latitude", "description": "Geografska ??irina." }
+          },
+          "required": ["@context", "@type", "lokacija", "lon", "lat"]
         }
       }
     },

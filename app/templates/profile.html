@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korisnicki profil</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='pipe_water.ico') }}" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-links">
+      <a href="{{ url_for('main.index') }}">Početna</a>
+      <a href="{{ url_for('main.refresh_snapshots') }}">Osvježi preslike</a>
+      <a href="{{ url_for('main.logout') }}">Odjava</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Korisnički profil</h1>
+    <p>Podaci iz openid objekta:</p>
+    <pre class="profile-json">{{ pretty }}</pre>
+  </main>
+</body>
+
+</html>

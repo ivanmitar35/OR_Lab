@@ -7,6 +7,35 @@ body {
   color: #222;
 }
 
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.top-nav a:hover {
+  background: #1d4ed8;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .dt-container {
   max-width: 100%;
   background: #ffffff;

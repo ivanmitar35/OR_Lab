@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pregled zdenaca</title>
   <meta description="Lokacije zdenaca Grada Zagreba"
-    keywords="javni zdenci, voda, zdenac, komunalna infrastruktura, Zagreb, gradske četvrti, lokacije, otvoreni podaci"
+    keywords="javni zdenci, voda, zdenac, komunalna infrastruktura, Zagreb, gradske cetvrti, lokacije, otvoreni podaci"
     author="Ivan Mitar" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/datatables.min.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/datatable.css') }}" />
@@ -14,9 +14,20 @@
 </head>
 
 <body>
+  <nav class="top-nav">
+    <a href="{{ url_for('main.index') }}">Povratak na početnu stranicu</a>
+    <div class="nav-links">
+      {% if session.get("user") %}
+        <a href="{{ url_for('main.profile') }}">Korisnički profil</a>
+        <a href="{{ url_for('main.refresh_snapshots') }}">Osvježi preslike</a>
+        <a href="{{ url_for('main.logout') }}">Odjava</a>
+      {% else %}
+        <a href="{{ url_for('main.login') }}">Prijava</a>
+      {% endif %}
+    </div>
+  </nav>
 
   <div style="margin-bottom: 10px;">
-    <a href="{{ url_for('main.index') }}">Povratak na početnu stranicu</a>
     <button id="downloadCsv">Preuzmi filtrirani CSV</button>
     <button id="downloadJson">Preuzmi filtrirani JSON</button>
   </div>

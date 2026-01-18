@@ -2,10 +2,11 @@ from decimal import Decimal
 from flask import request
 import psycopg2
 
-from .blueprint import main
+from ..blueprint import main
 from .api_response import json_response
-from .db import conn, fetch_count, fetch_row_with_cols, fetch_rows_with_cols
-from .zdenci_constants import (
+from ..data.db import conn, fetch_count, fetch_row_with_cols, fetch_rows_with_cols
+from ..data.jsonld import add_jsonld, add_jsonld_list
+from ..data.zdenci_constants import (
     BASE_FROM,
     MAP_SELECT_COLUMNS,
     REST_PAYLOAD_FIELDS,
@@ -166,7 +167,7 @@ def api_v1_zdenci_list():
             params + [limit, offset],
         )
         rows, cols = fetch_rows_with_cols(cur)
-        data = _rows_to_dicts(rows, cols)
+        data = add_jsonld_list(_rows_to_dicts(rows, cols))
     except psycopg2.Error as exc:
         conn.rollback()
         cur.close()
@@ -197,7 +198,7 @@ def api_v1_zdenci_get(zdenac_id):
             f"Zdenac {zdenac_id} not found.",
             {"detail": f"Zdenac {zdenac_id} does not exist."},
         )
-    return json_response(200, "Fetched zdenac.", data)
+    return json_response(200, "Fetched zdenac.", add_jsonld(data))
 
 
 @main.route("/api/v1/zdenci", methods=["POST"])
@@ -251,7 +252,7 @@ def api_v1_zdenci_create():
         return json_response(500, "Database error.", {"detail": str(exc)})
 
     cur.close()
-    return json_response(201, "Zdenac created.", data)
+    return json_response(201, "Zdenac created.", add_jsonld(data))
 
 
 @main.route("/api/v1/zdenci/<int:zdenac_id>", methods=["PUT"])
@@ -320,7 +321,7 @@ def api_v1_zdenci_update(zdenac_id):
         return json_response(500, "Database error.", {"detail": str(exc)})
 
     cur.close()
-    return json_response(200, "Zdenac updated.", data)
+    return json_response(200, "Zdenac updated.", add_jsonld(data))
 
 
 @main.route("/api/v1/zdenci/<int:zdenac_id>", methods=["DELETE"])
@@ -360,7 +361,7 @@ def api_v1_zdenci_statusi():
             """
         )
         rows, cols = fetch_rows_with_cols(cur)
-        data = _rows_to_dicts(rows, cols)
+        data = add_jsonld_list(_rows_to_dicts(rows, cols))
     except psycopg2.Error as exc:
         conn.rollback()
         cur.close()
@@ -389,7 +390,7 @@ def api_v1_zdenci_koordinate():
             (limit, offset),
         )
         rows, cols = fetch_rows_with_cols(cur)
-        data = _rows_to_dicts(rows, cols)
+        data = add_jsonld_list(_rows_to_dicts(rows, cols))
     except psycopg2.Error as exc:
         conn.rollback()
         cur.close()

@@ -1,7 +1,7 @@
 from flask import Flask, request
 from werkzeug.exceptions import HTTPException, InternalServerError, MethodNotAllowed
 
-from .api_response import json_response
+from .api.api_response import json_response
 from .auth import _init_auth0
 
 def create_app():
